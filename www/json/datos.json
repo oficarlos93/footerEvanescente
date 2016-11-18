@@ -1,0 +1,149 @@
+{
+    "Zonas": [
+        {
+            "Id": "000",
+            "Descripcion": "Zona 1"
+        }
+    ],
+    "Alergenos": [
+        {
+            "Codigo": "001",
+            "Nombre": "Pescados blancos y rojos",
+            "UrlPhoto": "/content/Images/alergenosImgs/pescado.png"
+        },
+        {
+            "Codigo": "002",
+            "Nombre": "Crustáceos, mariscos",
+            "UrlPhoto": "/content/Images/alergenosImgs/crustaceos.png"
+        },
+        {
+            "Codigo": "003",
+            "Nombre": "Moluscos, caracol",
+            "UrlPhoto": "/content/Images/alergenosImgs/moluscos.png"
+        },
+        {
+            "Codigo": "004",
+            "Nombre": "Cacahuetes",
+            "UrlPhoto": "/content/Images/alergenosImgs/cacahuetes.png"
+        },
+        {
+            "Codigo": "005",
+            "Nombre": "Apio",
+            "UrlPhoto": "/content/Images/alergenosImgs/apio.png"
+        },
+        {
+            "Codigo": "006",
+            "Nombre": "Altramuces",
+            "UrlPhoto": "/content/Images/alergenosImgs/altramuces.png"
+        },
+        {
+            "Codigo": "007",
+            "Nombre": "Mostaza",
+            "UrlPhoto": "/content/Images/alergenosImgs/mostaza.png"
+        },
+        {
+            "Codigo": "008",
+            "Nombre": "Frutos Secos",
+            "UrlPhoto": "/content/Images/alergenosImgs/cascara.png"
+        },
+        {
+            "Codigo": "009",
+            "Nombre": "Huevos",
+            "UrlPhoto": "/content/Images/alergenosImgs/huevos.png"
+        },
+        {
+            "Codigo": "010",
+            "Nombre": "Lacteos",
+            "UrlPhoto": "/content/Images/alergenosImgs/lacteos.png"
+        },
+        {
+            "Codigo": "011",
+            "Nombre": "Sulfitos",
+            "UrlPhoto": "/content/Images/alergenosImgs/sulfitos.png"
+        },
+        {
+            "Codigo": "012",
+            "Nombre": "Cereales con sésamo",
+            "UrlPhoto": "/content/Images/alergenosImgs/sesamo.png"
+        },
+        {
+            "Codigo": "013",
+            "Nombre": "Cereales con gluten o trigo",
+            "UrlPhoto": "/content/Images/alergenosImgs/gluten.png"
+        },
+        {
+            "Codigo": "014",
+            "Nombre": "Soja",
+            "UrlPhoto": "/content/Images/alergenosImgs/soja.png"
+        }
+    ],
+    "Idiomas": [
+        {
+            "Codigo": "es",
+            "Nombre": "Castellano (España)",
+            "Imagen": "/content/Images/flags/es.svg"
+        },
+        {
+            "Codigo": "ca-es",
+            "Nombre": "Catalán (España)",
+            "Imagen": "/content/Images/flags/cat.svg"
+        },
+        {
+            "Codigo": "de-de",
+            "Nombre": "Aleman (Alemania)",
+            "Imagen": "/content/Images/flags/de.svg"
+        }
+    ],
+    "PerfilesCliente": [
+        {
+            "Id": "001",
+            "Descripcion": "Celíacos"
+        },
+        {
+            "Id": "002",
+            "Descripcion": "Diabéticos"
+        },
+        {
+            "Id": "003",
+            "Descripcion": "Hipertensos"
+        },
+        {
+            "Id": "004",
+            "Descripcion": "Musulmanes"
+        },
+        {
+            "Id": "005",
+            "Descripcion": "Niños"
+        },
+        {
+            "Id": "006",
+            "Descripcion": "Veganos"
+        },
+        {
+            "Id": "007",
+            "Descripcion": "Vegetarianos"
+        }
+    ],
+    "Sugerencias": [
+        {
+            "Codigo": "001",
+            "Descripcion": "Al punto",
+            "GruposCarta": [
+                {
+                    "Id": "006",
+                    "Descripcion": "Carnes",
+                    "MlDescripcion": null
+                },
+                {
+                    "Id": "007",
+                    "Descripcion": "Pescados",
+                    "MlDescripcion": null
+                }
+            ]
+        }
+    ],
+    "MostrarPrimeroOfertasMovil": false,
+    "SimboloMoneda": "€",
+    "NombreDelegacion": "Ofimática Jaén, S.L.",
+    "UrlImagenDelegacion": null
+}

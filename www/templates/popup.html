@@ -1,0 +1,10 @@
+<div class="list"  >
+
+    <a ng-repeat="item in result" class="item item-avatar"  ng-click="seleccionarBandera('http://ofimenutesting.cloudapp.net{{ item.Imagen }}')">
+        
+        <img ng-src="http://ofimenutesting.cloudapp.net{{ item.Imagen }}">
+        <h2>{{ item.Nombre }}</h2>
+        <h4>{{ item.Codigo }}</h4>
+    </a>
+
+</div>

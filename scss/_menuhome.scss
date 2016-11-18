@@ -1,0 +1,59 @@
+
+.contenedor-menu{
+  width: 100%;
+  z-index: 1001;
+  background-color: white;
+  height: 25vh;
+  position: absolute;
+  transition: bottom 0.5s linear;
+  bottom: -25vh;
+}
+.capaoscurecer{
+  background-color: #000;
+  float:right;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  top:0;
+  opacity: 0;
+  position: absolute;
+  transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  z-index:1000;
+}
+.capaoscurecer-show{
+  visibility: visible;
+  opacity: .7;
+}
+.contenedor-menu-show{
+  bottom: 0px;
+}
+
+.icon {
+font-size: 30px;
+}
+
+.botonesmenu{
+  display: flex;
+  align-content: center;
+  height: 100%;
+}
+
+.botonesmenu span {
+  margin: 0 auto;
+  align-self: center;
+  color: $primary-color;
+}
+#backoffice{
+  float:left;
+  text-align: center;
+}
+#atril{
+  float:left;
+  text-align: center;
+  vertical-align: middle;
+}
+#configuracion{
+  float:right;
+  text-align: center;
+
+}

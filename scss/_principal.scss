@@ -1,0 +1,64 @@
+.principal {
+  height: 50%;
+}
+.principal#carta{
+  background-image:url("../img/fotocarta.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-left: 30px;
+}
+.botoncarta{
+  margin-top: 30px;
+  margin-left: 30px;
+  font-size: 22px;
+  color: #FFF;
+  width: 50%;
+  background-color: #6dc068;
+  opacity: .9;
+  float:right;
+  padding: 10px;
+  padding-bottom: 30px;
+}
+.principal#ofertas{
+  background-image:url("../img/fotoofertas.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  float:right;
+  height: 50% ;
+  width: 50%;
+}
+.botonofertas{
+  margin-top: 30px;
+  margin-left: 30px;
+  font-size: 22px;
+  color: #FFF;
+  width: 80%;
+  background-color: $color-boton-rojo-principal;
+  opacity: .9;
+  float:right;
+  padding: 10px;
+  padding-bottom: 30px;
+}
+.principal#busqueda{
+  background-image:url("../img/fotobusquedaavanzada.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  float:left;
+  height: 50%;
+  width: 50%;
+}
+.botonbusqueda{
+  margin-top: 30px;
+  margin-right: 20px;
+  font-size: 22px;
+  color: #FFF;
+  background-color: $color-boton-rojo-principal;
+  opacity: 0.9;
+  float:left;
+  text-align: right;
+  padding: 10px;
+  padding-bottom: 30px;
+}
