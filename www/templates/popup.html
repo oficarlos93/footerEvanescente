@@ -1,6 +1,7 @@
 <div class="list"  >
 
-    <a ng-repeat="item in result" class="item item-avatar"  ng-click="seleccionarBandera('http://ofimenutesting.cloudapp.net{{ item.Imagen }}')">
+    <a ng-repeat="item in result" class="item item-avatar" 
+    ng-click="seleccionarBandera('http://ofimenutesting.cloudapp.net{{ item.Imagen }}','{{item.Codigo}}')">
         
         <img ng-src="http://ofimenutesting.cloudapp.net{{ item.Imagen }}">
         <h2>{{ item.Nombre }}</h2>

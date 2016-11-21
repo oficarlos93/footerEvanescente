@@ -27,6 +27,8 @@
     <script src="cordova.js"></script>
 
     <!-- your app's js -->
+    <script src="lib/angular-translate/angular-translate.min.js"></script>
+    <script src="js/traduc.js"></script>
     <script src="js/app.js"></script>
     <script src="js/mainController.js"></script>
   </head>
@@ -37,7 +39,11 @@
                    on-swipe-down="onGesture('Swipe Down')"
                    on-swipe-left="onGesture('Swipe Left')"
                    on-hold="onGesture('Hold')"
-                   on-double-tap="onGesture('Double-Tap')">
+                   on-double-tap="onGesture('Double-Tap')" 
+                   title="{{ 'ht' | translate }}">
+                
+    <p translate="hp1">Swipe to the right to reveal the left menu.</p>
+    <p translate="hp2">(On desktop click and drag from left to right)</p>
 
 <div class="capaoscurecer" ng-class="showCapaOscurecer"></div>
 
@@ -50,9 +56,10 @@
        align="center" ng-click="showPopup() "id="configuracion"><span><img height="25px" ng-src={{flag}}><br></span></div>
      
        
-   </div>
+   </div> 
+</div>
    
-  
+      
 </ion-view>
 
   </body>

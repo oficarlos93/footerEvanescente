@@ -3,7 +3,7 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('starter', ['ionic'])
+angular.module('starter', ['ionic','pascalprecht.translate'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -23,12 +23,30 @@ angular.module('starter', ['ionic'])
   });
 })//Fin run
 
-.controller('homeCtrl',["$scope", "$ionicGesture","$ionicPopup","$http",function($scope,$ionicGesture,$ionicPopup,$http){
+.config(function($stateProvider, $urlRouterProvider,$translateProvider) {
+      for(lang in translations){
+		$translateProvider.translations(lang, translations[lang]);
+	}
+	
+	$translateProvider.preferredLanguage('es');
+
+        $stateProvider
+            .state('index', {
+                url: '/',
+                templateUrl: 'index.html',
+                controller: 'homeCtrl'
+            })
+            
+        $urlRouterProvider.otherwise('/');
+    })
+
+.controller('homeCtrl',["$scope","$rootScope", "$ionicGesture","$ionicPopup","$http","$translate",
+function($scope,$rootScope,$ionicGesture,$ionicPopup,$http,$translate){
   $scope.slide=false;
   $scope.gesture = {
     used: ''
   };
-
+  
   //Gestos
   $scope.onGesture = function(gesture) {
     $scope.gesture.used = gesture;
@@ -66,7 +84,7 @@ angular.module('starter', ['ionic'])
       things = result.data;
     });
 
-   //Popup
+  //Popup
  $scope.showPopup = function() {
  
   var myPopup = $ionicPopup.show({
@@ -84,12 +102,20 @@ angular.module('starter', ['ionic'])
 }
 //Banderas
 $scope.flag="http://ofimenutesting.cloudapp.net/content/Images/flags/es.svg";
-  $scope.seleccionarBandera = function(idioma){
+  $scope.seleccionarBandera = function(idioma,lang){
      
     console.log(idioma);
     $scope.flag=(idioma);
- 
+    console.log(lang);
+    //ChangeLanguage(lang);
+ $translate.use(lang);
 
   }
+  
+  $rootScope.ChangeLanguage = function (lang) {
+		
+   $translate.use(lang);
+		
+	}
   
 }]); //Fin Controller
