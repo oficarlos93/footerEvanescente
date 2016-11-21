@@ -40,9 +40,16 @@
                    on-double-tap="onGesture('Double-Tap')">
 
 <div class="capaoscurecer" ng-class="showCapaOscurecer"></div>
-  <div class="contenedor-menu" ng-class="showClass">
-       <div class="botonesmenu col col-33" style="margin-left: 10px;" 
-       align="center" ng-click="showPopup() "id="configuracion"><span><img height="50px" ng-src={{flag}}><br>Seleccione un Idioma</span></div>
+
+  <div class="contenedor-menu" style="display:flex;flex-direction:column;align-items:center" ng-class="showClass">
+    <div class="contenedor-puntos"><i class="icon ion-more"></i></div>
+    <div style="background-color:green;width:100%;height:15vh">
+      
+             <div class="botonesmenu col col-110" style="margin-left: 10px;" 
+
+       align="center" ng-click="showPopup() "id="configuracion"><span><img height="25px" ng-src={{flag}}><br></span></div>
+     
+       
    </div>
    
   

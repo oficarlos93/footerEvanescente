@@ -88,6 +88,7 @@ $scope.flag="http://ofimenutesting.cloudapp.net/content/Images/flags/es.svg";
      
     console.log(idioma);
     $scope.flag=(idioma);
+ 
 
   }
   

@@ -1,12 +1,23 @@
-
+.contenedor-puntos{
+    text-align: center;
+     width:45px;
+     height:19px;
+     -webkit-border-radius: 75px 75px 0px 0px;
+     -moz-border-radius: 75px 75px 0px 0px;
+     border-radius: 4px 4px 0px 0px;
+     background:rgba(227,162,11,0.9);
+     
+   
+}
+    
 .contenedor-menu{
   width: 100%;
   z-index: 1001;
-  background-color: white;
-  height: 25vh;
+
+  height: 23vh;
   position: absolute;
   transition: bottom 0.5s linear;
-  bottom: -25vh;
+  bottom: -20vh;
 }
 .capaoscurecer{
   background-color: #000;
@@ -25,7 +36,7 @@
   opacity: .7;
 }
 .contenedor-menu-show{
-  bottom: 0px;
+  bottom: -45px;
 }
 
 .icon {
