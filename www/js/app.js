@@ -29,6 +29,7 @@ angular.module('starter', ['ionic'])
     used: ''
   };
 
+ 
   //Gestos
   $scope.onGesture = function(gesture) {
     $scope.gesture.used = gesture;
