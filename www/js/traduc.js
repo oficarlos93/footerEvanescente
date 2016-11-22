@@ -4,7 +4,7 @@ var translations = {
 				"hp2": "(En el escritori, hag cli y arrastr de izquierd a derech.)",
           "ht": "Welcome"
 		},
-		"de": {
+		"de-de": {
 				"hp1": "Streichen Sie nach rechts, um die linke Menü offenbaren.",
 				"hp2": "(Auf dem Desktop klicken und ziehen Sie von links nach rechts)",
           "ht": "willkommen"
